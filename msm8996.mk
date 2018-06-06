@@ -30,7 +30,10 @@ $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-bootleg
+    $(LOCAL_PATH)/overlay-cr
+    
+PRODUCT_ENFORCE_RRO_TARGETS := \
+framework-res
 
 # Permissions
 PRODUCT_COPY_FILES += \
